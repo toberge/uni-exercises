@@ -1,0 +1,1 @@
+watch -n0 './trans plus & ./trans plus & ./trans minus & ./trans plus & ./trans minus'

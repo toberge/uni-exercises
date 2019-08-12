@@ -1,0 +1,9 @@
+# exclude all built .class and .jar files
+**/*.class
+**/*.jar
+
+# exclude all traces of IntelliJ
+**/out/**
+**/.idea/**
+**/*.iml
+**/*.uxf

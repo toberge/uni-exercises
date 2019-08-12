@@ -1,0 +1,21 @@
+#!/bin/bash
+# init
+function pause(){
+	echo
+   	read -p "Press [Enter] to move on"
+   	echo
+}
+
+echo "Modifying default file, saldo.txt"
+echo
+# use \ for line continuation
+./trans clear && ./trans && ./trans plus && pause\
+&& ./trans valid && ./trans invalid && pause\
+&& ./trans "transAtlantic.txt"\
+&& ./trans plus && ./trans minus && ./trans clear && pause
+echo "Modifying salute.txt next"
+./trans transAtlantic.txt salute.txt\
+&& ./trans plus salute.txt && pause
+echo "Showing errors"
+./trans nonexistentfile && ./trans error1 && pause
+echo "all done"
