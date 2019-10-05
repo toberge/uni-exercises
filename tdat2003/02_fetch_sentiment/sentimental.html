@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/sentimental.css">
+    <script src="js/sentimental.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Sentimentality Awaits</title>
+</head>
+<body>
+
+<div class="container">
+    <p id="sendme">You're feeling <strong>[undefined]</strong> right now.</p>
+    <label for="sentence-input">Your sentence, please: </label>
+    <input type="text" placeholder="" id="sentence-input">
+    <button id="sentence-button">Want yer mood?</button>
+    <p><em id="error">Checking if the service is up...</em></p>
+</div>
+
+<!-- just something to easily switch between moods w/o access to service -->
+<div class="debug-container">
+    <div class="debug-option">0</div>
+    <div class="debug-option">1</div>
+    <div class="debug-option">2</div>
+    <div class="debug-option">3</div>
+    <div class="debug-option">4</div>
+</div>
+
+</body>
+</html>

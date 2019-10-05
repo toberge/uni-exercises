@@ -1,0 +1,32 @@
+{
+  "name": "sauci-jesture",
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ]
+  },
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "jest": "^23.6.0",
+    "mysql": "^2.16.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "description": "Dette er et prosjekt som implementerer en REST-service med et DAO-objekt og tester dette med Node/JEST.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.stud.idi.ntnu.no:toberge/DatabaseTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -7,3 +7,6 @@
 **/.idea/**
 **/*.iml
 **/*.uxf
+
+# exclude npm's massive package storage
+**/node_modules/**

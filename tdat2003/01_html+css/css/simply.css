@@ -1,0 +1,228 @@
+/*---------------
+grid layout
+---------------*/
+
+#navbar {
+    grid-area: navbar;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 20vh auto 20vh 10vh;
+    grid-template-areas:
+    "header header header"
+    "navbar content ."
+    "navbar content ."
+    "footer footer footer";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: visible;
+}
+
+/*--------------
+Crappy flexibility section
+Overusing !important because it doesn't seem to work otherwise
+...and I should have done this the other way around.
+--------------*/
+
+@media screen and (max-width: 1280px) {
+    .right {
+        display: none !important;
+    }
+    header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* should've done it from phone layout and up */
+@media screen and (max-width: 780px) {
+    #navbar {
+        /*this is turning into cancer*/
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+        /*border-bottom-right-radius: 0 !important;*/
+        text-align: center;
+    }
+    #navbar li {
+        display: inline-block;
+    }
+    .left {
+        display: none !important;
+    }
+    header h1 {
+        font-size: 2.7rem;
+    }
+    /*.left {
+        display: inline;
+        float: none;
+        height: 10vh;
+    }*/
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 20vh 10vh;
+        grid-template-areas:
+            "header"
+            "navbar"
+            "content"
+            "footer";
+    }
+}
+
+/*----------------
+General styling
+----------------*/
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EEE;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: capitalize;
+}
+
+header img {
+    height: 100%
+}
+
+.left {
+    display: block;
+    float: left;
+}
+
+.right {
+    display: block;
+    float: right;
+}
+
+header,
+#navbar {
+    background-color: #1B222E;
+}
+
+#navbar {
+    padding-left: 10%;
+    padding-top: 10%;
+    margin-bottom: 20%;
+    border-bottom-right-radius: 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0;
+
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+li a,
+h1 {
+    color: #DEC7C9;
+}
+
+h2 {
+    border-radius: 5px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-color: #555552;
+    background-color: #4C4A44;
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+main {
+    padding: 2rem;
+}
+
+article {
+}
+
+article img {
+    display: block;
+    float: right;
+    height: 10rem;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+footer {
+    background-color: #4C4A44;
+    text-align: center;
+    color: white;
+}
+
+/*-------------
+Typography
+-------------*/
+
+h1,
+h2 {
+    font-family: "Roboto Medium", "Cantarell Light",
+                 "DejaVu Sans Light", "Arial", sans-serif;
+}
+
+li a {
+    font-family: 'Cantarell', 'Ubuntu Regular', 'Noto', 'DejaVu Sans', 'Liberation Sans',
+                 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+footer,
+main {
+    font-family: Georgia, "Liberation Serif", "DejaVu Serif", "Times New Roman", serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+}
+
+main,
+footer {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+/*
+CF9278
+555552
+1B222E
+4C4A44
+DEC7C9
+*/

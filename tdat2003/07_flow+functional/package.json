@@ -1,0 +1,21 @@
+{
+  "name": "flowfunc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node test.js",
+    "test": "flow && flow coverage --color *.js"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.108.0",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-flow": "^7.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

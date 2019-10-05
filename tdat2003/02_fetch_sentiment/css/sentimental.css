@@ -1,0 +1,61 @@
+body {
+    background-color: #502332;
+    color: white;
+    font-family: Comfortaa, "Liberation Sans", Arial, sans-serif;
+
+    transition: background-color 0.3s;
+}
+
+.container {
+
+    border: 2rem outset white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+}
+
+#sendme {
+    margin-top: 7%;
+}
+
+.debug-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+    height: 3%;
+}
+
+.debug-option {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    display: block;
+    float-offset: 0;
+    float: left;
+
+    text-align: center;
+}
+
+@media only screen and (min-aspect-ratio: 9.1 / 16) {
+    .container {
+        min-width: 40%;
+        min-height: 20%;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 9 / 16) {
+    .container {
+        min-width: 80%;
+        min-height: 30%;
+    }
+}
