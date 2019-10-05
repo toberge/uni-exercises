@@ -1,9 +1,13 @@
-# uni-ecercises
+# uni-exercises
 Various exercises from university courses  
 Totally qualified solutions as usual /s
 
 **TDAT1003** was the introductory programming course (Java)  
-**TDAT1005** was its sequel (Java, SQL)
+**TDAT1005** was its sequel (Java, SQL)  
+**TDAT2003** dealt with web development (JavaScript, SQL, HTML, CSS)  
+(some exercises were part of a project, see the [fridge-news repo](https://github.com/toberge/fridge-news))  
+**TDAT2005** was our fancy algorithm course, see the [algdat repo](https://github.com/toberge/algdat) (language irrelevant)  
+(200X courses are from my current year and thus WIP)
 
 ### Please keep the following in mind:
 + Some of the code is not written by me; the exercises often have premade code we are supposed to use. Those pieces should stick out as relatively simple compared to the rest of the exercise.
