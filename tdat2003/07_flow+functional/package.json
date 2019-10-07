@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node test.js",
+    "start": "babel-node excercise.js",
     "test": "flow && flow coverage --color *.js"
   },
   "devDependencies": {

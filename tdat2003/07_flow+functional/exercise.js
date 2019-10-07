@@ -13,7 +13,7 @@ const timesTwo = v => v * 2;
 console.log(v1.map(timesTwo));
 
 console.error('mean of v1: 2');
-const sum = (v, acc) => v + acc;
+const sum = (acc, v) => acc + v;
 console.log(v1.reduce(sum) / v1.length);
 
 console.error('v1 dot v2: 32');
@@ -54,7 +54,7 @@ console.error('magnitude of v elements: [ 2.8284271247461903, 1.4142135623730951
 console.log(v.map(c => Math.sqrt(c.imag*c.imag + c.real*c.real)));
 
 console.error('sum of v: Complex { real: 3, imag: 3 }');
-console.log(v.reduce((c: Complex, acc: Complex) => {
+console.log(v.reduce((acc: Complex, c: Complex) => {
     acc.imag += c.imag;
     acc.real += c.real;
     return acc;
@@ -72,11 +72,12 @@ console.log(students.map(({name, grade}: {name: string, grade: string}) => `${na
 
 console.error('many got C: 2');
 const gotC = ({grade}: {grade: string}) => grade === 'C';
-const count = (value: any, acc: number) => ++acc;
+const count = (acc: number, value: any) => ++acc;
 console.log(students.filter(gotC).length);
 
 console.error('entage of C grades: 0.6666666666666666');
 console.log(students.filter(gotC).length / students.length/*reduce<number>((v: any, acc: number) => ++acc, 0)*/);
+console.log(students.filter(gotC).length / students.reduce<number>(count, 0));
 
 const withGrade = char => ({grade}) => char === grade;
 console.error('anyone get A: Yes');
