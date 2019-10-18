@@ -27,7 +27,7 @@ console.log(v1.reduce(sum) + v2.map(timesTwo).reduce(sum));
 
 console.error('v1 as string: v1[0] = 1, v1[1] = 2, v1[2] = 3');
 console.log(v1.map<string>((v, i) => `v1[${i}] = ${v}, `)
-              .reduce((v, acc) => acc.concat(v))
+              .reduce((acc, v) => acc.concat(v))
               .replace(/, $/, ''));
 
 

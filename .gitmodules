@@ -1,0 +1,4 @@
+[submodule "tdat2005"]
+	path = tdat2005
+	url = git@github.com:toberge/algdat.git
+	branch = master
