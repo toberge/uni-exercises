@@ -4,8 +4,11 @@ Totally qualified solutions as usual /s
 
 **TDAT1003** was the introductory programming course (Java)  
 **TDAT1005** was its sequel (Java, SQL)  
+**TDAT2001** was our science (chemistry, electrophysics) and statistics course  
 **TDAT2003** dealt with web development (JavaScript, SQL, HTML, CSS)  
 (some exercises were part of a project, see the [fridge-news repo](https://github.com/toberge/fridge-news))  
+**TDAT2002** was a mixed mathemathics course, including discrete mathemathics, multivariable calculus and numerical analysis  
+**TDAT2004** Data communication and network programming, see [network programming repo](https://github.com/toberge/network-programming)  
 **TDAT2005** was our fancy algorithm course, see the [algdat repo](https://github.com/toberge/algdat) (language irrelevant)  
 (200X courses are from my current year and thus WIP)
 
@@ -17,3 +20,4 @@ Since this is the last time these versions of the courses are run, I assume it i
 \- there should no longer be a risk of somebody using my code to cheat their way through their education.
 
 ### Dette er ingen kokebok.
+
