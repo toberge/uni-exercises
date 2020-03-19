@@ -11,3 +11,7 @@
 # exclude npm's massive package storage
 **/node_modules/**
 **/package-lock.json
+
+# exclude Jupyter Notebook checkpoints
+**/.ipynb_checkpoints
+
